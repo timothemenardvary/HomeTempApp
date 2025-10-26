@@ -7,7 +7,7 @@ import datetime
 
 # --- CONFIG ---
 st.set_page_config(page_title="Visualisation Températures", layout="wide")
-
+st.title("Init")
 
 # Récupérer le mot de passe depuis les secrets
 PASSWORD = st.secrets["APP_PASSWORD"]
