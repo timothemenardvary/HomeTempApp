@@ -11,7 +11,7 @@ st.set_page_config(page_title="Visualisation Températures", layout="wide")
 # --- SIDEBAR ---
 st.sidebar.header("Configuration")
 sheet_url = st.sidebar.text_input(
-    "Lien Google Sheet",
+    "Lien Google Sheets",
     link
 )
 
