@@ -8,8 +8,6 @@ import datetime
 # --- CONFIG ---
 st.set_page_config(page_title="Visualisation Températures", layout="wide")
 
-PASSWORD = st.secrets["APP_PASSWORD"]
-
 
 # Récupérer le mot de passe depuis les secrets
 PASSWORD = st.secrets["APP_PASSWORD"]
@@ -37,7 +35,7 @@ else:
     )
 
     # --- LOAD DATA ---
-
+    @st.cache_data
     def load_data(sheet_url):
         # Conversion du lien Google Sheet en CSV
         if "/edit" in sheet_url:
